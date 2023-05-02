@@ -19,8 +19,8 @@ jobs:
 #i don't like it that we need to apt-get this, but otherwise we can't build OpenDolBoot? :/
       - name: Installing essentials
         run: |
-          sudo apt-get update
-          sudo apt-get upgrade
+          sudo apt-get update -y
+          sudo apt-get upgrade -y
           sudo apt-get install -y build-essential
           sudo apt-get install -y cppcheck
       - name: Checkout
